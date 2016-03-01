@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat8/Makefile 401933 2015-11-19 11:41:56Z ale $
+# $FreeBSD: head/www/tomcat8/Makefile 409775 2016-02-28 22:13:45Z feld $
 
 PORTNAME=	tomcat
-PORTVERSION=	8.0.30
+PORTVERSION=	8.0.32
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/tomcat/tomcat-8/v${PORTVERSION}/bin
 PKGNAMESUFFIX=	8
