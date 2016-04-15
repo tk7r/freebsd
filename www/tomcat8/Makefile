@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat8/Makefile 409775 2016-02-28 22:13:45Z feld $
+# $FreeBSD: head/www/tomcat8/Makefile 412351 2016-04-01 14:33:55Z mat $
 
 PORTNAME=	tomcat
-PORTVERSION=	8.0.32
+PORTVERSION=	8.0.33
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/tomcat/tomcat-8/v${PORTVERSION}/bin
 PKGNAMESUFFIX=	8
@@ -13,7 +13,7 @@ COMMENT=	Open-source Java web server by Apache, 8.x branch
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	jsvc:${PORTSDIR}/devel/jakarta-commons-daemon
+RUN_DEPENDS=	jsvc:devel/jakarta-commons-daemon
 
 USES=		cpe
 CPE_VENDOR=	apache
