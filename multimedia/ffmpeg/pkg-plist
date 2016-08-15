@@ -108,7 +108,7 @@ include/libswscale/version.h
 lib/libavcodec.a
 lib/libavcodec.so
 lib/libavcodec.so.57
-lib/libavcodec.so.57.24.102
+lib/libavcodec.so.57.48.101
 lib/libavdevice.a
 lib/libavdevice.so
 lib/libavdevice.so.57
@@ -116,11 +116,11 @@ lib/libavdevice.so.57.0.101
 lib/libavfilter.a
 lib/libavfilter.so
 lib/libavfilter.so.6
-lib/libavfilter.so.6.31.100
+lib/libavfilter.so.6.47.100
 lib/libavformat.a
 lib/libavformat.so
 lib/libavformat.so.57
-lib/libavformat.so.57.25.100
+lib/libavformat.so.57.41.100
 lib/libavresample.a
 lib/libavresample.so
 lib/libavresample.so.3
@@ -128,7 +128,7 @@ lib/libavresample.so.3.0.0
 lib/libavutil.a
 lib/libavutil.so
 lib/libavutil.so.55
-lib/libavutil.so.55.17.103
+lib/libavutil.so.55.28.100
 lib/libpostproc.a
 lib/libpostproc.so
 lib/libpostproc.so.54
@@ -136,11 +136,11 @@ lib/libpostproc.so.54.0.100
 lib/libswresample.a
 lib/libswresample.so
 lib/libswresample.so.2
-lib/libswresample.so.2.0.101
+lib/libswresample.so.2.1.100
 lib/libswscale.a
 lib/libswscale.so
 lib/libswscale.so.4
-lib/libswscale.so.4.0.100
+lib/libswscale.so.4.1.100
 libdata/pkgconfig/libavcodec.pc
 libdata/pkgconfig/libavdevice.pc
 libdata/pkgconfig/libavfilter.pc
