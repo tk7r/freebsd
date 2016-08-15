@@ -404,7 +404,6 @@ CONFIGURE_ARGS+=--prefix="${PREFIX}" \
 		--enable-avfilter \
 		--enable-avresample \
 		--enable-pthreads \
-		--disable-libutvideo \
 		--disable-libsoxr \
 		--cc="${CC}" \
 		--extra-cflags="${FFMPEG_CFLAGS} -I${LOCALBASE}/include" \
