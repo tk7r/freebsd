@@ -3,7 +3,7 @@
 
 PORTNAME=	ffmpeg
 PORTVERSION=	3.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	http://ffmpeg.org/releases/
@@ -18,8 +18,8 @@ BUILD_DEPENDS=	yasm:devel/yasm \
 		${LOCALBASE}/bin/as:devel/binutils
 
 # Compiler customization - BEGIN
-BUILD_DEPENDS+= clang37:devel/llvm37
-CC=             clang37
+BUILD_DEPENDS+= clang38:devel/llvm38
+CC=             clang38
 # Compiler customization - END
 
 HAS_CONFIGURE=	yes
