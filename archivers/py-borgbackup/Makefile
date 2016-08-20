@@ -2,7 +2,7 @@
 # $FreeBSD: head/archivers/py-borgbackup/Makefile 418517 2016-07-14 07:14:38Z wen $
 
 PORTNAME=	borgbackup
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
