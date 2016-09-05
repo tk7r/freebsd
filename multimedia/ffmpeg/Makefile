@@ -23,7 +23,7 @@ CC=             clang38
 # Compiler customization - END
 
 HAS_CONFIGURE=	yes
-USES=		compiler cpe gmake perl5 pkgconfig tar:bzip2 shebangfix
+USES=		compiler cpe gmake perl5 pkgconfig tar:xz shebangfix
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 SHEBANG_FILES=	doc/texi2pod.pl
