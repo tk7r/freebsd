@@ -18,8 +18,8 @@ BUILD_DEPENDS=	yasm:devel/yasm \
 		${LOCALBASE}/bin/as:devel/binutils
 
 # Compiler customization - BEGIN
-#BUILD_DEPENDS+= clang38:devel/llvm38
-#CC=             clang38
+BUILD_DEPENDS+= clang39:devel/llvm39
+CC=             clang39
 # Compiler customization - END
 
 HAS_CONFIGURE=	yes
