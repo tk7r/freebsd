@@ -22,6 +22,8 @@
 @sample %%T%%/conf/catalina.policy.sample
 @sample %%T%%/conf/catalina.properties.sample
 @sample %%T%%/conf/context.xml.sample
+@sample %%T%%/conf/jaspic-providers.xml.sample
+@sample %%T%%/conf/jaspic-providers.xsd.sample
 @sample %%T%%/conf/logging.properties.sample
 @sample %%T%%/conf/server.xml.sample
 @sample %%T%%/conf/tomcat-users.xml.sample
@@ -41,6 +43,7 @@
 %%T%%/lib/el-api.jar
 %%T%%/lib/jasper-el.jar
 %%T%%/lib/jasper.jar
+%%T%%/lib/jaspic-api.jar
 %%T%%/lib/jsp-api.jar
 %%T%%/lib/servlet-api.jar
 %%T%%/lib/tomcat-api.jar
@@ -569,6 +572,7 @@
 %%T%%/webapps/examples/jsp/snp/snoop.jsp.html
 %%T%%/webapps/examples/jsp/source.jsp
 %%T%%/webapps/examples/jsp/source.jsp.html
+%%T%%/webapps/examples/jsp/tagplugin/
 %%T%%/webapps/examples/jsp/tagplugin/choose.html
 %%T%%/webapps/examples/jsp/tagplugin/choose.jsp
 %%T%%/webapps/examples/jsp/tagplugin/choose.jsp.html
