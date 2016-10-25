@@ -28,7 +28,8 @@ TOMCAT_SUBDIR?=	${DISTNAME:R}
 TOMCAT_HOME=	${PREFIX}/${TOMCAT_SUBDIR}
 TOMCAT_CONF_FILES=	\
 		catalina.policy catalina.properties context.xml logging.properties \
-		 server.xml tomcat-users.xml tomcat-users.xsd web.xml
+		 server.xml tomcat-users.xml tomcat-users.xsd web.xml \
+		 jaspic-providers.xml jaspic-providers.xsd
 PLIST_SUB=	T=${TOMCAT_SUBDIR} \
 		WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
 
