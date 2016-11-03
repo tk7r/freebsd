@@ -2,7 +2,7 @@
 # $FreeBSD: head/multimedia/ffmpeg/Makefile 412399 2016-04-02 11:46:18Z riggs $
 
 PORTNAME=	ffmpeg
-PORTVERSION=	3.1.4
+PORTVERSION=	3.2
 PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net
@@ -31,7 +31,7 @@ SHEBANG_FILES=	doc/texi2pod.pl
 PORTSCOUT=	limit:^2\.
 
 OPTIONS_DEFINE= ALSA AMR_NB AMR_WB ASS BS2B CACA CDIO CELT DC1394 \
-		DEBUG DOCS FAAC FDK_AAC FFSERVER FLITE FONTCONFIG \
+		DEBUG DOCS FDK_AAC FFSERVER FLITE FONTCONFIG \
 		FREETYPE FREI0R FRIBIDI GME GSM ICONV ILBC JACK LADSPA \
 		LAME LIBBLURAY MODPLUG OPENAL OPENCL OPENCV OPENGL \
 		OPENH264 OPENJPEG OPTIMIZED_CFLAGS OPUS PULSEAUDIO \
@@ -127,11 +127,6 @@ DEBUG_CONFIGURE_OFF=	--disable-debug
 # docs
 DOCS_BUILD_DEPENDS=	texi2html:textproc/texi2html
 DOCS_CONFIGURE_ENABLE=	htmlpages
-
-# faac
-FAAC_LIB_DEPENDS=	libfaac.so:audio/faac
-FAAC_CONFIGURE_ENABLE=	libfaac
-FAAC_IMPLIES=		NONFREE
 
 # fdk_aac
 FDK_AAC_LIB_DEPENDS=	libfdk-aac.so:audio/fdk-aac
@@ -382,7 +377,7 @@ LICENSE_FILE_GPLv3=	${WRKSRC}/COPYING.GPLv3
 LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING.LGPLv3
 
 NONFREE_CONFIGURE_ENABLE=nonfree
-NONFREE_VARS=		RESTRICTED="linking to libfaac restricts redistribution"
+NONFREE_VARS=		RESTRICTED="linking to libfdk-aac restricts redistribution"
 
 INSTALL_TARGET=	install-progs install-doc install-data \
 		install-libs install-headers
