@@ -2,7 +2,7 @@
 # $FreeBSD: head/multimedia/ffmpeg/Makefile 412399 2016-04-02 11:46:18Z riggs $
 
 PORTNAME=	ffmpeg
-PORTVERSION=	3.2
+PORTVERSION=	3.2.2
 PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net

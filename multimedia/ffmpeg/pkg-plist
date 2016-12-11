@@ -108,7 +108,7 @@ include/libswscale/version.h
 lib/libavcodec.a
 lib/libavcodec.so
 lib/libavcodec.so.57
-lib/libavcodec.so.57.64.100
+lib/libavcodec.so.57.64.101
 lib/libavdevice.a
 lib/libavdevice.so
 lib/libavdevice.so.57
