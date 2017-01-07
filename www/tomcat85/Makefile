@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/tomcat8/Makefile 417360 2016-06-23 10:28:44Z ale $
 
 PORTNAME=	tomcat
-PORTVERSION=	8.5.6
+PORTVERSION=	8.5.9
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/tomcat/tomcat-8/v${PORTVERSION}/bin
 PKGNAMESUFFIX=	85
