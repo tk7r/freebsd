@@ -1,7 +1,11 @@
---- Makefile.orig	2016-11-01 19:43:06 UTC
-+++ Makefile
-@@ -12,7 +12,7 @@ SHAREDIR ?= $(PREFIX)/share
- PYTHON ?= /usr/bin/env python
+--- Makefile.orig	2017-09-15 16:47:41.000000000 +0200
++++ Makefile	2017-09-20 16:42:41.008941000 +0200
+@@ -9,10 +9,10 @@
+ BINDIR ?= $(PREFIX)/bin
+ MANDIR ?= $(PREFIX)/man
+ SHAREDIR ?= $(PREFIX)/share
+-PYTHON ?= /usr/bin/env python
++PYTHON ?= /usr/bin/env python3
  
  # set SYSCONFDIR to /etc if PREFIX=/usr or PREFIX=/usr/local
 -SYSCONFDIR = $(shell if [ $(PREFIX) = /usr -o $(PREFIX) = /usr/local ]; then echo /etc; else echo $(PREFIX)/etc; fi)
@@ -9,7 +13,7 @@
  
  install: youtube-dl youtube-dl.1 youtube-dl.bash-completion youtube-dl.zsh youtube-dl.fish
  	install -d $(DESTDIR)$(BINDIR)
-@@ -20,11 +20,11 @@ install: youtube-dl youtube-dl.1 youtube
+@@ -20,11 +20,11 @@
  	install -d $(DESTDIR)$(MANDIR)/man1
  	install -m 644 youtube-dl.1 $(DESTDIR)$(MANDIR)/man1
  	install -d $(DESTDIR)$(SYSCONFDIR)/bash_completion.d
@@ -24,7 +28,16 @@
  
  codetest:
  	flake8 .
-@@ -68,11 +68,6 @@ supportedsites:
+@@ -53,7 +53,7 @@
+ 	done
+ 	touch -t 200001010101 zip/youtube_dl/*.py zip/youtube_dl/*/*.py
+ 	mv zip/youtube_dl/__main__.py zip/
+-	cd zip ; zip -q ../youtube-dl youtube_dl/*.py youtube_dl/*/*.py __main__.py
++	cd zip ; zip -q ../youtube-dl youtube_dl/*.py youtube_dl/*/*.py __main__.py ; cd ..
+ 	rm -rf zip
+ 	echo '#!$(PYTHON)' > youtube-dl
+ 	cat youtube-dl.zip >> youtube-dl
+@@ -75,11 +75,6 @@
  README.txt: README.md
  	pandoc -f markdown -t plain README.md -o README.txt
  
