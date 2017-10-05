@@ -1,7 +1,8 @@
 # $FreeBSD: head/www/youtube_dl/Makefile 447016 2017-08-01 09:55:38Z araujo $
 
 PORTNAME=	youtube_dl
-PORTVERSION=	2017.09.15
+PORTVERSION=	2017.10.01
+PORTREVISION=   1
 CATEGORIES=	www
 MASTER_SITES=	https://yt-dl.org/downloads/${PORTVERSION}/
 DISTNAME=	youtube-dl-${PORTVERSION}
@@ -16,7 +17,7 @@ BUILD_DEPENDS=	zip:archivers/zip
 
 ALL_TARGET=	youtube-dl
 MAKE_ARGS=	PYTHON=${PYTHON_CMD}
-USES=		python:3.4+
+USES=		gmake python:3.4+
 NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/youtube-dl
 
