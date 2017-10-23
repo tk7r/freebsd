@@ -1,7 +1,7 @@
 # $FreeBSD: head/www/youtube_dl/Makefile 447016 2017-08-01 09:55:38Z araujo $
 
 PORTNAME=	youtube_dl
-PORTVERSION=	2017.10.01
+PORTVERSION=	2017.10.20
 PORTREVISION=   1
 CATEGORIES=	www
 MASTER_SITES=	https://yt-dl.org/downloads/${PORTVERSION}/
